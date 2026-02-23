@@ -1,7 +1,26 @@
+// ============================================================
+// EIGE 2025 — Dumbbell grafikoa + eskuineko azalpen-panela
+// ============================================================
+// Fitxategiak:
+//  - ./data/dumbbell_2025.csv
+//  - ./data/indicator_info_eu.json
+//
+// OHARRA: indicator_info_eu.json-eko gakoek (keys) CSVko
+// "adierazlea" zutabeko testuarekin BAT ETORRI behar dute.
+// ============================================================
+
 const CSV_PATH = "./data/dumbbell_2025.csv";
+const INFO_PATH = "./data/indicator_info_eu.json";
+
 const elIndicator = document.getElementById("adierazleSelect");
 
+// Eskuineko panelaren elementuak
+const elInfoTitle = document.getElementById("infoTitle");
+const elInfoDesc  = document.getElementById("infoDesc");
+const elInfoUnit  = document.getElementById("infoUnit");
+
 let ROWS = [];
+let INFO = {};
 
 function uniq(arr) {
   return [...new Set(arr)];
@@ -52,6 +71,7 @@ function parseCSV(text) {
     }
     cur += ch;
   }
+
   // azken lerroa
   row.push(cur);
   if (row.length > 1 || row[0] !== "") rows.push(row);
@@ -67,7 +87,27 @@ function parseNumber(x) {
   return Number.isFinite(n) ? n : null;
 }
 
+// Azalpen-panela eguneratu
+function updateInfoPanel(indicator) {
+  const info = INFO?.[indicator];
+
+  if (!elInfoTitle || !elInfoDesc || !elInfoUnit) return; // HTML-ean panelik ez badago
+
+  if (!info) {
+    elInfoTitle.textContent = indicator;
+    elInfoDesc.textContent = "Adierazle honen deskribapena ez dago oraindik eskuragarri.";
+    elInfoUnit.textContent = "";
+    return;
+  }
+
+  elInfoTitle.textContent = info.title || indicator;
+  elInfoDesc.textContent  = info.desc || "";
+  elInfoUnit.textContent  = info.unit ? `Unitatea: ${info.unit}` : "";
+}
+
 function render(indicator) {
+  updateInfoPanel(indicator);
+
   const data = ROWS.filter(r => r.adierazlea === indicator);
 
   // X ardatza: eremuak/herrialdeak
@@ -130,7 +170,24 @@ function render(indicator) {
   });
 }
 
+async function loadInfo() {
+  // Panelerako deskribapenak (estatikoak) kargatu
+  const r = await fetch(INFO_PATH, { cache: "no-store" });
+
+  // Fitxategia oraindik ez baduzu sortu, webak funtzionatzen jarrai dezan:
+  if (!r.ok) {
+    console.warn(`Kontuz: ezin izan da info JSONa kargatu (${r.status}). ${INFO_PATH}`);
+    INFO = {};
+    return;
+  }
+
+  INFO = await r.json();
+}
+
 async function init() {
+  // 0) Info JSONa kargatu (badagoen kasuan)
+  await loadInfo();
+
   // 1) CSV-a kargatu
   const resp = await fetch(CSV_PATH, { cache: "no-store" });
   if (!resp.ok) {
@@ -141,10 +198,9 @@ async function init() {
   // 2) Parseatu
   const table = parseCSV(text);
   const header = table[0].map(h => h.trim());
-
   const idx = (name) => header.indexOf(name);
 
-  // Zure CSV-aren header-ak (euskarazko script-aren arabera)
+  // CSV-aren header-ak (euskarazko script-aren arabera)
   const iEremua = idx("eremua");
   const iAdierazlea = idx("adierazlea");
   const iWomen = idx("women");
