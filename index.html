@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="eu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EIGE 2025 — Dumbbell</title>
+
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; margin: 20px; }
+    .toolbar { display:flex; gap:12px; flex-wrap:wrap; align-items:end; margin-bottom:12px; }
+    label { display:flex; flex-direction:column; gap:6px; font-size:14px; }
+    select { padding:8px 10px; min-width: 420px; max-width: 100%; }
+    #container { max-width: 1200px; height: 650px; }
+    .note { color:#555; font-size: 13px; margin-top: 8px; }
+  </style>
+
+  <!-- Highcharts (dumbbell behar du) -->
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+  <script src="https://code.highcharts.com/modules/dumbbell.js"></script>
+
+  <!-- CSV irakurtzeko (Highcharts-en data modulua) -->
+  <script src="https://code.highcharts.com/modules/data.js"></script>
+</head>
+
+<body>
+  <div class="toolbar">
+    <label>
+      Adierazlea (27etatik)
+      <select id="adierazleSelect"></select>
+    </label>
+  </div>
+
+  <div id="container"></div>
+  <div class="note">Iturria: EIGE (export zip → CSV). Grafikoa: Highcharts dumbbell.</div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
