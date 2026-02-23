@@ -1,0 +1,13 @@
+
+{
+  "Full-time equivalent employment rate (%, 15-89)": {
+    "title": "Lanaldi osoko baliokideko enplegu-tasa",
+    "desc": "15-89 urteko biztanleen artean, lanaldi osoko baliokidera bihurtutako enpleguaren tasa. ...",
+    "unit": "% (15-89)"
+  },
+  "Duration of working life (years, 15+ population)": {
+    "title": "Lan-bizitzaren iraupena",
+    "desc": "15 urtetik gorako biztanleriaren lan-bizitza metatuaren iraupena (urteetan). ...",
+    "unit": "urteak"
+  }
+}
