@@ -1,9 +1,7 @@
-
 const CSV_PATH = "./data/dumbbell_2025.csv";
-
 const elIndicator = document.getElementById("adierazleSelect");
 
-let ROWS = []; // CSV lerro guztiak hemen
+let ROWS = [];
 
 function uniq(arr) {
   return [...new Set(arr)];
@@ -19,24 +17,63 @@ function setOptions(selectEl, values) {
   });
 }
 
+// CSV parser sinplea (komaz bereiztua, komatxoekin ere bai)
+function parseCSV(text) {
+  const rows = [];
+  let row = [];
+  let cur = "";
+  let inQuotes = false;
+
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    const next = text[i + 1];
+
+    if (ch === '"' && inQuotes && next === '"') {
+      cur += '"'; // escape ""
+      i++;
+      continue;
+    }
+    if (ch === '"') {
+      inQuotes = !inQuotes;
+      continue;
+    }
+    if (ch === "," && !inQuotes) {
+      row.push(cur);
+      cur = "";
+      continue;
+    }
+    if ((ch === "\n" || ch === "\r") && !inQuotes) {
+      if (ch === "\r" && next === "\n") i++;
+      row.push(cur);
+      cur = "";
+      if (row.length > 1 || row[0] !== "") rows.push(row);
+      row = [];
+      continue;
+    }
+    cur += ch;
+  }
+  // azken lerroa
+  row.push(cur);
+  if (row.length > 1 || row[0] !== "") rows.push(row);
+
+  return rows;
+}
+
 function parseNumber(x) {
-  // CSV-an baliteke hutsik egotea edo koma/puntua…
   if (x === null || x === undefined) return null;
   const s = String(x).trim();
   if (!s) return null;
-  // balizko koma decimalak -> puntura
-  const normalized = s.replace(",", ".");
-  const n = Number(normalized);
+  const n = Number(s.replace(",", ".")); // badaezpada
   return Number.isFinite(n) ? n : null;
 }
 
 function render(indicator) {
   const data = ROWS.filter(r => r.adierazlea === indicator);
 
-  // Herrialde/eremuak X ardatzean
+  // X ardatza: eremuak/herrialdeak
   const categories = data.map(r => r.eremua);
 
-  // Dumbbell seriea: low = women, high = men
+  // Dumbbell: low=women, high=men
   const seriesData = data.map(r => ({
     name: r.eremua,
     low: r.women,
@@ -47,10 +84,7 @@ function render(indicator) {
   }));
 
   Highcharts.chart("container", {
-    chart: {
-      type: "dumbbell",
-      inverted: false
-    },
+    chart: { type: "dumbbell", inverted: false },
     title: { text: indicator },
     subtitle: { text: "2025" },
 
@@ -68,20 +102,20 @@ function render(indicator) {
 
     tooltip: {
       pointFormatter: function () {
+        const g = (this.gap ?? (this.men - this.women));
         return `
           <b>${this.name}</b><br/>
           Emakumeak: ${this.women}<br/>
           Gizonak: ${this.men}<br/>
-          Arrakala (G - E): ${Number(this.gap).toFixed(2)}
+          Arrakala (G - E): ${Number(g).toFixed(2)}
         `;
       }
     },
 
     plotOptions: {
       series: {
-        // koloreak (aukerakoa): Women (low) eta Men (high)
-        lowColor: "#F2C94C",
-        color: "#2DD4BF",
+        lowColor: "#F2C94C", // women
+        color: "#2DD4BF",    // men
         connectorWidth: 3,
         marker: { radius: 6 }
       }
@@ -96,55 +130,51 @@ function render(indicator) {
   });
 }
 
-function init() {
-  Highcharts.data({
-    csvURL: CSV_PATH,
-    enablePolling: false,
-    complete: function (options) {
-      // options.dataCols -> zutabeak; baina errazago: options.dataRows erabiltzea
-      // Highcharts Data modulua:
-      // options.dataRows[0] = header
-      // options.dataRows[n] = row
+async function init() {
+  // 1) CSV-a kargatu
+  const resp = await fetch(CSV_PATH, { cache: "no-store" });
+  if (!resp.ok) {
+    throw new Error(`Ezin izan da CSV-a kargatu (${resp.status}). Bidea egiaztatu: ${CSV_PATH}`);
+  }
+  const text = await resp.text();
 
-      const rows = options.dataRows;
-      const header = rows[0];
+  // 2) Parseatu
+  const table = parseCSV(text);
+  const header = table[0].map(h => h.trim());
 
-      // Espero dugun header-a: urtea,eremua,adierazlea,women,men,arrakala
-      const idx = (name) => header.indexOf(name);
+  const idx = (name) => header.indexOf(name);
 
-      const iUrtea = idx("urtea");
-      const iEremua = idx("eremua");
-      const iAdierazlea = idx("adierazlea");
-      const iWomen = idx("women");
-      const iMen = idx("men");
-      const iArrakala = idx("arrakala");
+  // Zure CSV-aren header-ak (euskarazko script-aren arabera)
+  const iEremua = idx("eremua");
+  const iAdierazlea = idx("adierazlea");
+  const iWomen = idx("women");
+  const iMen = idx("men");
+  const iArrakala = idx("arrakala");
 
-      if ([iUrtea, iEremua, iAdierazlea, iWomen, iMen, iArrakala].some(i => i === -1)) {
-        console.error("Header-a ez dator bat. CSV header-a begiratu:", header);
-        alert("CSV header-a ez dator bat esperotakoarekin. Kontsola begiratu mesedez.");
-        return;
-      }
+  if ([iEremua, iAdierazlea, iWomen, iMen].some(i => i === -1)) {
+    console.error("Header-a ez dator bat. Aurkitutakoa:", header);
+    throw new Error("CSV header-ak ez dira espero bezala. Begiratu: eremua, adierazlea, women, men, arrakala");
+  }
 
-      ROWS = rows.slice(1).map(r => ({
-        urtea: r[iUrtea],
-        eremua: r[iEremua],
-        adierazlea: r[iAdierazlea],
-        women: parseNumber(r[iWomen]),
-        men: parseNumber(r[iMen]),
-        arrakala: parseNumber(r[iArrakala])
-      }))
-      // segurtasunagatik: nullak kanpo
-      .filter(r => r.women !== null && r.men !== null);
+  ROWS = table.slice(1).map(r => ({
+    eremua: (r[iEremua] ?? "").trim(),
+    adierazlea: (r[iAdierazlea] ?? "").trim(),
+    women: parseNumber(r[iWomen]),
+    men: parseNumber(r[iMen]),
+    arrakala: iArrakala === -1 ? null : parseNumber(r[iArrakala])
+  }))
+  .filter(r => r.eremua && r.adierazlea && r.women !== null && r.men !== null);
 
-      const indicators = uniq(ROWS.map(r => r.adierazlea)).sort((a,b)=>a.localeCompare(b, "eu"));
-      setOptions(elIndicator, indicators);
+  const indicators = uniq(ROWS.map(r => r.adierazlea)).sort((a,b)=>a.localeCompare(b, "eu"));
+  setOptions(elIndicator, indicators);
 
-      // lehenengo adierazlea marraztu
-      render(indicators[0]);
+  // lehenengo adierazlea
+  render(indicators[0]);
 
-      elIndicator.addEventListener("change", () => render(elIndicator.value));
-    }
-  });
+  elIndicator.addEventListener("change", () => render(elIndicator.value));
 }
 
-init();
+init().catch(err => {
+  console.error(err);
+  alert("Errorea: " + err.message);
+});
