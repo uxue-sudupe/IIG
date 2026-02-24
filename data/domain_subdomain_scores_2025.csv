@@ -1,0 +1,561 @@
+geo,level,name,value
+European Union - 27 countries (from 2020),overall,Overall Gender Equality Index,63.4
+European Union - 27 countries (from 2020),domain,Work,69.3
+European Union - 27 countries (from 2020),subdomain,Participation in work,82.1
+European Union - 27 countries (from 2020),subdomain,Segregation and quality of work,58.5
+European Union - 27 countries (from 2020),domain,Money,73.9
+European Union - 27 countries (from 2020),subdomain,Financial resources,76.1
+European Union - 27 countries (from 2020),subdomain,Economic situation,71.7
+European Union - 27 countries (from 2020),domain,Knowledge,57.4
+European Union - 27 countries (from 2020),subdomain,Attainment and participation,78.7
+European Union - 27 countries (from 2020),subdomain,Segregation,41.8
+European Union - 27 countries (from 2020),domain,Time,65
+European Union - 27 countries (from 2020),subdomain,Care activities,57.1
+European Union - 27 countries (from 2020),subdomain,Social activities,74.1
+European Union - 27 countries (from 2020),domain,Power,40.5
+European Union - 27 countries (from 2020),subdomain,Political power,47.3
+European Union - 27 countries (from 2020),subdomain,Economic power,49.4
+European Union - 27 countries (from 2020),subdomain,Social power,28.4
+European Union - 27 countries (from 2020),domain,Health,86.2
+European Union - 27 countries (from 2020),subdomain,Health status,90.2
+European Union - 27 countries (from 2020),subdomain,Healthy behaviour,82.4
+Belgium,overall,Overall Gender Equality Index,68.5
+Belgium,domain,Work,69.1
+Belgium,subdomain,Participation in work,83.6
+Belgium,subdomain,Segregation and quality of work,57.1
+Belgium,domain,Money,78.6
+Belgium,subdomain,Financial resources,76.7
+Belgium,subdomain,Economic situation,80.6
+Belgium,domain,Knowledge,56.3
+Belgium,subdomain,Attainment and participation,75.7
+Belgium,subdomain,Segregation,41.9
+Belgium,domain,Time,76.3
+Belgium,subdomain,Care activities,70.5
+Belgium,subdomain,Social activities,82.6
+Belgium,domain,Power,49.9
+Belgium,subdomain,Political power,79.6
+Belgium,subdomain,Economic power,58
+Belgium,subdomain,Social power,26.9
+Belgium,domain,Health,86.3
+Belgium,subdomain,Health status,92.5
+Belgium,subdomain,Healthy behaviour,80.5
+Bulgaria,overall,Overall Gender Equality Index,58.1
+Bulgaria,domain,Work,78.6
+Bulgaria,subdomain,Participation in work,86.3
+Bulgaria,subdomain,Segregation and quality of work,71.6
+Bulgaria,domain,Money,83.8
+Bulgaria,subdomain,Financial resources,84.1
+Bulgaria,subdomain,Economic situation,83.4
+Bulgaria,domain,Knowledge,47.3
+Bulgaria,subdomain,Attainment and participation,54.9
+Bulgaria,subdomain,Segregation,40.8
+Bulgaria,domain,Time,65.2
+Bulgaria,subdomain,Care activities,55.6
+Bulgaria,subdomain,Social activities,76.4
+Bulgaria,domain,Power,25.6
+Bulgaria,subdomain,Political power,38.9
+Bulgaria,subdomain,Economic power,19.8
+Bulgaria,subdomain,Social power,21.8
+Bulgaria,domain,Health,74.7
+Bulgaria,subdomain,Health status,89.2
+Bulgaria,subdomain,Healthy behaviour,62.5
+Czechia,overall,Overall Gender Equality Index,53.2
+Czechia,domain,Work,63.6
+Czechia,subdomain,Participation in work,79.6
+Czechia,subdomain,Segregation and quality of work,50.9
+Czechia,domain,Money,75.6
+Czechia,subdomain,Financial resources,83.9
+Czechia,subdomain,Economic situation,68.1
+Czechia,domain,Knowledge,52.9
+Czechia,subdomain,Attainment and participation,69.2
+Czechia,subdomain,Segregation,40.5
+Czechia,domain,Time,57.6
+Czechia,subdomain,Care activities,42.8
+Czechia,subdomain,Social activities,77.6
+Czechia,domain,Power,20.3
+Czechia,subdomain,Political power,21.7
+Czechia,subdomain,Economic power,35.3
+Czechia,subdomain,Social power,10.9
+Czechia,domain,Health,82.6
+Czechia,subdomain,Health status,89.8
+Czechia,subdomain,Healthy behaviour,76.1
+Denmark,overall,Overall Gender Equality Index,71.8
+Denmark,domain,Work,70
+Denmark,subdomain,Participation in work,87.5
+Denmark,subdomain,Segregation and quality of work,56
+Denmark,domain,Money,82.3
+Denmark,subdomain,Financial resources,84.3
+Denmark,subdomain,Economic situation,80.4
+Denmark,domain,Knowledge,55.3
+Denmark,subdomain,Attainment and participation,70.1
+Denmark,subdomain,Segregation,43.6
+Denmark,domain,Time,81.1
+Denmark,subdomain,Care activities,84.6
+Denmark,subdomain,Social activities,77.6
+Denmark,domain,Power,57.3
+Denmark,subdomain,Political power,74.9
+Denmark,subdomain,Economic power,72.5
+Denmark,subdomain,Social power,34.7
+Denmark,domain,Health,87.5
+Denmark,subdomain,Health status,95.5
+Denmark,subdomain,Healthy behaviour,80.1
+Germany,overall,Overall Gender Equality Index,63.2
+Germany,domain,Work,63.9
+Germany,subdomain,Participation in work,81.9
+Germany,subdomain,Segregation and quality of work,49.9
+Germany,domain,Money,68.1
+Germany,subdomain,Financial resources,72.2
+Germany,subdomain,Economic situation,64.3
+Germany,domain,Knowledge,59
+Germany,subdomain,Attainment and participation,96.1
+Germany,subdomain,Segregation,36.3
+Germany,domain,Time,61.2
+Germany,subdomain,Care activities,49.7
+Germany,subdomain,Social activities,75.3
+Germany,domain,Power,47.5
+Germany,subdomain,Political power,63.5
+Germany,subdomain,Economic power,61.9
+Germany,subdomain,Social power,27.3
+Germany,domain,Health,87.8
+Germany,subdomain,Health status,92.8
+Germany,subdomain,Healthy behaviour,83.2
+Estonia,overall,Overall Gender Equality Index,59.4
+Estonia,domain,Work,76.5
+Estonia,subdomain,Participation in work,89.7
+Estonia,subdomain,Segregation and quality of work,65.2
+Estonia,domain,Money,82.9
+Estonia,subdomain,Financial resources,90
+Estonia,subdomain,Economic situation,76.3
+Estonia,domain,Knowledge,50.7
+Estonia,subdomain,Attainment and participation,66
+Estonia,subdomain,Segregation,39
+Estonia,domain,Time,74.4
+Estonia,subdomain,Care activities,67.2
+Estonia,subdomain,Social activities,82.4
+Estonia,domain,Power,21.9
+Estonia,subdomain,Political power,45.9
+Estonia,subdomain,Economic power,13.9
+Estonia,subdomain,Social power,16.5
+Estonia,domain,Health,86.8
+Estonia,subdomain,Health status,89.7
+Estonia,subdomain,Healthy behaviour,84.1
+Ireland,overall,Overall Gender Equality Index,69
+Ireland,domain,Work,72.2
+Ireland,subdomain,Participation in work,81.9
+Ireland,subdomain,Segregation and quality of work,63.6
+Ireland,domain,Money,71.3
+Ireland,subdomain,Financial resources,72.4
+Ireland,subdomain,Economic situation,70.2
+Ireland,domain,Knowledge,64.2
+Ireland,subdomain,Attainment and participation,92.2
+Ireland,subdomain,Segregation,44.8
+Ireland,domain,Time,66.3
+Ireland,subdomain,Care activities,55.5
+Ireland,subdomain,Social activities,79.4
+Ireland,domain,Power,54.1
+Ireland,subdomain,Political power,36.2
+Ireland,subdomain,Economic power,66.1
+Ireland,subdomain,Social power,66
+Ireland,domain,Health,93.8
+Ireland,subdomain,Health status,95.2
+Ireland,subdomain,Healthy behaviour,92.5
+Greece,overall,Overall Gender Equality Index,57
+Greece,domain,Work,67.9
+Greece,subdomain,Participation in work,74
+Greece,subdomain,Segregation and quality of work,62.2
+Greece,domain,Money,76.7
+Greece,subdomain,Financial resources,81.9
+Greece,subdomain,Economic situation,71.9
+Greece,domain,Knowledge,58.7
+Greece,subdomain,Attainment and participation,72.3
+Greece,subdomain,Segregation,47.7
+Greece,domain,Time,56
+Greece,subdomain,Care activities,43.9
+Greece,subdomain,Social activities,71.6
+Greece,domain,Power,26.2
+Greece,subdomain,Political power,30.6
+Greece,subdomain,Economic power,35.3
+Greece,subdomain,Social power,16.6
+Greece,domain,Health,83.8
+Greece,subdomain,Health status,90.4
+Greece,subdomain,Healthy behaviour,77.6
+Spain,overall,Overall Gender Equality Index,70.9
+Spain,domain,Work,69.4
+Spain,subdomain,Participation in work,83.2
+Spain,subdomain,Segregation and quality of work,57.9
+Spain,domain,Money,73.3
+Spain,subdomain,Financial resources,75.9
+Spain,subdomain,Economic situation,70.7
+Spain,domain,Knowledge,55.7
+Spain,subdomain,Attainment and participation,78.5
+Spain,subdomain,Segregation,39.5
+Spain,domain,Time,74.1
+Spain,subdomain,Care activities,68.9
+Spain,subdomain,Social activities,79.6
+Spain,domain,Power,66.6
+Spain,subdomain,Political power,77.7
+Spain,subdomain,Economic power,65.7
+Spain,subdomain,Social power,58
+Spain,domain,Health,86.2
+Spain,subdomain,Health status,87.2
+Spain,subdomain,Healthy behaviour,85.2
+France,overall,Overall Gender Equality Index,73.4
+France,domain,Work,72.8
+France,subdomain,Participation in work,88
+France,subdomain,Segregation and quality of work,60.3
+France,domain,Money,78.1
+France,subdomain,Financial resources,78.4
+France,subdomain,Economic situation,77.7
+France,domain,Knowledge,62.6
+France,subdomain,Attainment and participation,86.9
+France,subdomain,Segregation,45.1
+France,domain,Time,67.6
+France,subdomain,Care activities,65.3
+France,subdomain,Social activities,69.9
+France,domain,Power,72.5
+France,subdomain,Political power,79.7
+France,subdomain,Economic power,81.7
+France,subdomain,Social power,58.6
+France,domain,Health,88
+France,subdomain,Health status,94.2
+France,subdomain,Healthy behaviour,82.2
+Croatia,overall,Overall Gender Equality Index,57.1
+Croatia,domain,Work,68.2
+Croatia,subdomain,Participation in work,87.4
+Croatia,subdomain,Segregation and quality of work,53.2
+Croatia,domain,Money,80.8
+Croatia,subdomain,Financial resources,81.2
+Croatia,subdomain,Economic situation,80.5
+Croatia,domain,Knowledge,51.9
+Croatia,subdomain,Attainment and participation,62.4
+Croatia,subdomain,Segregation,43.3
+Croatia,domain,Time,69.6
+Croatia,subdomain,Care activities,61.1
+Croatia,subdomain,Social activities,79.3
+Croatia,domain,Power,21.8
+Croatia,subdomain,Political power,35
+Croatia,subdomain,Economic power,33.3
+Croatia,subdomain,Social power,8.9
+Croatia,domain,Health,83.1
+Croatia,subdomain,Health status,85
+Croatia,subdomain,Healthy behaviour,81.2
+Italy,overall,Overall Gender Equality Index,61.9
+Italy,domain,Work,61
+Italy,subdomain,Participation in work,69
+Italy,subdomain,Segregation and quality of work,54
+Italy,domain,Money,67
+Italy,subdomain,Financial resources,75.4
+Italy,subdomain,Economic situation,59.6
+Italy,domain,Knowledge,56.8
+Italy,subdomain,Attainment and participation,65.3
+Italy,subdomain,Segregation,49.3
+Italy,domain,Time,59.4
+Italy,subdomain,Care activities,51.9
+Italy,subdomain,Social activities,67.9
+Italy,domain,Power,47.9
+Italy,subdomain,Political power,41.2
+Italy,subdomain,Economic power,74.3
+Italy,subdomain,Social power,35.9
+Italy,domain,Health,86.9
+Italy,subdomain,Health status,89.5
+Italy,subdomain,Healthy behaviour,84.5
+Cyprus,overall,Overall Gender Equality Index,47.6
+Cyprus,domain,Work,65.3
+Cyprus,subdomain,Participation in work,86.3
+Cyprus,subdomain,Segregation and quality of work,49.4
+Cyprus,domain,Money,69.7
+Cyprus,subdomain,Financial resources,70.8
+Cyprus,subdomain,Economic situation,68.6
+Cyprus,domain,Knowledge,44.6
+Cyprus,subdomain,Attainment and participation,50.4
+Cyprus,subdomain,Segregation,39.4
+Cyprus,domain,Time,54.7
+Cyprus,subdomain,Care activities,42.6
+Cyprus,subdomain,Social activities,70.2
+Cyprus,domain,Power,13.6
+Cyprus,subdomain,Political power,19.9
+Cyprus,subdomain,Economic power,11.2
+Cyprus,subdomain,Social power,11.4
+Cyprus,domain,Health,84.4
+Cyprus,subdomain,Health status,95.7
+Cyprus,subdomain,Healthy behaviour,74.4
+Latvia,overall,Overall Gender Equality Index,56.7
+Latvia,domain,Work,77.6
+Latvia,subdomain,Participation in work,91
+Latvia,subdomain,Segregation and quality of work,66.1
+Latvia,domain,Money,76.5
+Latvia,subdomain,Financial resources,80.3
+Latvia,subdomain,Economic situation,72.8
+Latvia,domain,Knowledge,43.5
+Latvia,subdomain,Attainment and participation,62.6
+Latvia,subdomain,Segregation,30.2
+Latvia,domain,Time,57.2
+Latvia,subdomain,Care activities,48.6
+Latvia,subdomain,Social activities,67.3
+Latvia,domain,Power,28.9
+Latvia,subdomain,Political power,37.6
+Latvia,subdomain,Economic power,28.5
+Latvia,subdomain,Social power,22.7
+Latvia,domain,Health,78.1
+Latvia,subdomain,Health status,83.9
+Latvia,subdomain,Healthy behaviour,72.7
+Lithuania,overall,Overall Gender Equality Index,60.9
+Lithuania,domain,Work,73.9
+Lithuania,subdomain,Participation in work,92.4
+Lithuania,subdomain,Segregation and quality of work,59.1
+Lithuania,domain,Money,81.9
+Lithuania,subdomain,Financial resources,85.8
+Lithuania,subdomain,Economic situation,78.1
+Lithuania,domain,Knowledge,47.4
+Lithuania,subdomain,Attainment and participation,70.5
+Lithuania,subdomain,Segregation,31.9
+Lithuania,domain,Time,63.3
+Lithuania,subdomain,Care activities,60.3
+Lithuania,subdomain,Social activities,66.5
+Lithuania,domain,Power,34.6
+Lithuania,subdomain,Political power,48.5
+Lithuania,subdomain,Economic power,33.4
+Lithuania,subdomain,Social power,25.6
+Lithuania,domain,Health,79.8
+Lithuania,subdomain,Health status,82
+Lithuania,subdomain,Healthy behaviour,77.7
+Luxembourg,overall,Overall Gender Equality Index,63.9
+Luxembourg,domain,Work,69.1
+Luxembourg,subdomain,Participation in work,86.4
+Luxembourg,subdomain,Segregation and quality of work,55.3
+Luxembourg,domain,Money,73.7
+Luxembourg,subdomain,Financial resources,73.2
+Luxembourg,subdomain,Economic situation,74.2
+Luxembourg,domain,Knowledge,61.9
+Luxembourg,subdomain,Attainment and participation,84.7
+Luxembourg,subdomain,Segregation,45.2
+Luxembourg,domain,Time,68.9
+Luxembourg,subdomain,Care activities,55.7
+Luxembourg,subdomain,Social activities,85.3
+Luxembourg,domain,Power,37.3
+Luxembourg,subdomain,Political power,49.5
+Luxembourg,subdomain,Economic power,30.3
+Luxembourg,subdomain,Social power,34.8
+Luxembourg,domain,Health,87.6
+Luxembourg,subdomain,Health status,94.5
+Luxembourg,subdomain,Healthy behaviour,81.1
+Hungary,overall,Overall Gender Equality Index,51.6
+Hungary,domain,Work,74.8
+Hungary,subdomain,Participation in work,85.3
+Hungary,subdomain,Segregation and quality of work,65.6
+Hungary,domain,Money,78.8
+Hungary,subdomain,Financial resources,85.4
+Hungary,subdomain,Economic situation,72.7
+Hungary,domain,Knowledge,49.9
+Hungary,subdomain,Attainment and participation,69.6
+Hungary,subdomain,Segregation,35.8
+Hungary,domain,Time,64.6
+Hungary,subdomain,Care activities,51.8
+Hungary,subdomain,Social activities,80.5
+Hungary,domain,Power,12.9
+Hungary,subdomain,Political power,10.9
+Hungary,subdomain,Economic power,10.6
+Hungary,subdomain,Social power,18.3
+Hungary,domain,Health,86.1
+Hungary,subdomain,Health status,88.6
+Hungary,subdomain,Healthy behaviour,83.7
+Malta,overall,Overall Gender Equality Index,58.9
+Malta,domain,Work,72.3
+Malta,subdomain,Participation in work,78.3
+Malta,subdomain,Segregation and quality of work,66.7
+Malta,domain,Money,71.8
+Malta,subdomain,Financial resources,74.2
+Malta,subdomain,Economic situation,69.5
+Malta,domain,Knowledge,58.2
+Malta,subdomain,Attainment and participation,72.1
+Malta,subdomain,Segregation,47
+Malta,domain,Time,60.6
+Malta,subdomain,Care activities,54.2
+Malta,subdomain,Social activities,67.8
+Malta,domain,Power,28.1
+Malta,subdomain,Political power,36.1
+Malta,subdomain,Economic power,23.2
+Malta,subdomain,Social power,26.4
+Malta,domain,Health,87.5
+Malta,subdomain,Health status,85.9
+Malta,subdomain,Healthy behaviour,89.2
+Netherlands,overall,Overall Gender Equality Index,69.5
+Netherlands,domain,Work,64.5
+Netherlands,subdomain,Participation in work,82.9
+Netherlands,subdomain,Segregation and quality of work,50.2
+Netherlands,domain,Money,66.2
+Netherlands,subdomain,Financial resources,65.9
+Netherlands,subdomain,Economic situation,66.5
+Netherlands,domain,Knowledge,62.1
+Netherlands,subdomain,Attainment and participation,88.4
+Netherlands,subdomain,Segregation,43.6
+Netherlands,domain,Time,74.8
+Netherlands,subdomain,Care activities,69.6
+Netherlands,subdomain,Social activities,80.5
+Netherlands,domain,Power,63.2
+Netherlands,subdomain,Political power,67.9
+Netherlands,subdomain,Economic power,70.5
+Netherlands,subdomain,Social power,52.8
+Netherlands,domain,Health,89.1
+Netherlands,subdomain,Health status,92.5
+Netherlands,subdomain,Healthy behaviour,85.9
+Austria,overall,Overall Gender Equality Index,61.2
+Austria,domain,Work,67.8
+Austria,subdomain,Participation in work,81.3
+Austria,subdomain,Segregation and quality of work,56.5
+Austria,domain,Money,65.3
+Austria,subdomain,Financial resources,66
+Austria,subdomain,Economic situation,64.6
+Austria,domain,Knowledge,54.2
+Austria,subdomain,Attainment and participation,76.9
+Austria,subdomain,Segregation,38.3
+Austria,domain,Time,63.3
+Austria,subdomain,Care activities,53.2
+Austria,subdomain,Social activities,75.3
+Austria,domain,Power,39.9
+Austria,subdomain,Political power,66.4
+Austria,subdomain,Economic power,50.6
+Austria,subdomain,Social power,18.8
+Austria,domain,Health,88.7
+Austria,subdomain,Health status,91.1
+Austria,subdomain,Healthy behaviour,86.3
+Poland,overall,Overall Gender Equality Index,57.8
+Poland,domain,Work,74.8
+Poland,subdomain,Participation in work,82.5
+Poland,subdomain,Segregation and quality of work,67.9
+Poland,domain,Money,81.1
+Poland,subdomain,Financial resources,86.9
+Poland,subdomain,Economic situation,75.6
+Poland,domain,Knowledge,50.9
+Poland,subdomain,Attainment and participation,65.2
+Poland,subdomain,Segregation,39.7
+Poland,domain,Time,68.7
+Poland,subdomain,Care activities,64.3
+Poland,subdomain,Social activities,73.5
+Poland,domain,Power,21.6
+Poland,subdomain,Political power,37.2
+Poland,subdomain,Economic power,27.9
+Poland,subdomain,Social power,9.7
+Poland,domain,Health,85.4
+Poland,subdomain,Health status,89.6
+Poland,subdomain,Healthy behaviour,81.4
+Portugal,overall,Overall Gender Equality Index,63.4
+Portugal,domain,Work,74.9
+Portugal,subdomain,Participation in work,89.9
+Portugal,subdomain,Segregation and quality of work,62.4
+Portugal,domain,Money,79.9
+Portugal,subdomain,Financial resources,79.5
+Portugal,subdomain,Economic situation,80.4
+Portugal,domain,Knowledge,55.5
+Portugal,subdomain,Attainment and participation,68.5
+Portugal,subdomain,Segregation,45
+Portugal,domain,Time,67
+Portugal,subdomain,Care activities,54.5
+Portugal,subdomain,Social activities,82.4
+Portugal,domain,Power,36.8
+Portugal,subdomain,Political power,50.3
+Portugal,subdomain,Economic power,47.4
+Portugal,subdomain,Social power,21
+Portugal,domain,Health,80.6
+Portugal,subdomain,Health status,79.4
+Portugal,subdomain,Healthy behaviour,81.8
+Romania,overall,Overall Gender Equality Index,57
+Romania,domain,Work,72.3
+Romania,subdomain,Participation in work,74.9
+Romania,subdomain,Segregation and quality of work,69.8
+Romania,domain,Money,79.8
+Romania,subdomain,Financial resources,84.1
+Romania,subdomain,Economic situation,75.7
+Romania,domain,Knowledge,64.1
+Romania,subdomain,Attainment and participation,80.7
+Romania,subdomain,Segregation,50.9
+Romania,domain,Time,61.5
+Romania,subdomain,Care activities,50.9
+Romania,subdomain,Social activities,74.2
+Romania,domain,Power,26.6
+Romania,subdomain,Political power,29.2
+Romania,subdomain,Economic power,30.4
+Romania,subdomain,Social power,21.3
+Romania,domain,Health,60.9
+Romania,subdomain,Health status,80.1
+Romania,subdomain,Healthy behaviour,46.3
+Slovenia,overall,Overall Gender Equality Index,58
+Slovenia,domain,Work,73.3
+Slovenia,subdomain,Participation in work,87.7
+Slovenia,subdomain,Segregation and quality of work,61.3
+Slovenia,domain,Money,86.2
+Slovenia,subdomain,Financial resources,89.6
+Slovenia,subdomain,Economic situation,82.9
+Slovenia,domain,Knowledge,45
+Slovenia,subdomain,Attainment and participation,56.8
+Slovenia,subdomain,Segregation,35.6
+Slovenia,domain,Time,63.4
+Slovenia,subdomain,Care activities,55.2
+Slovenia,subdomain,Social activities,72.9
+Slovenia,domain,Power,24.6
+Slovenia,subdomain,Political power,54.3
+Slovenia,subdomain,Economic power,32.4
+Slovenia,subdomain,Social power,8.4
+Slovenia,domain,Health,86.6
+Slovenia,subdomain,Health status,93.8
+Slovenia,subdomain,Healthy behaviour,80
+Slovakia,overall,Overall Gender Equality Index,57.2
+Slovakia,domain,Work,70.4
+Slovakia,subdomain,Participation in work,87.3
+Slovakia,subdomain,Segregation and quality of work,56.8
+Slovakia,domain,Money,83.6
+Slovakia,subdomain,Financial resources,88.5
+Slovakia,subdomain,Economic situation,78.9
+Slovakia,domain,Knowledge,51
+Slovakia,subdomain,Attainment and participation,63.2
+Slovakia,subdomain,Segregation,41.1
+Slovakia,domain,Time,64.5
+Slovakia,subdomain,Care activities,53.3
+Slovakia,subdomain,Social activities,78
+Slovakia,domain,Power,22.9
+Slovakia,subdomain,Political power,20.9
+Slovakia,subdomain,Economic power,31.7
+Slovakia,subdomain,Social power,18.1
+Slovakia,domain,Health,82.8
+Slovakia,subdomain,Health status,91.3
+Slovakia,subdomain,Healthy behaviour,75
+Finland,overall,Overall Gender Equality Index,68.3
+Finland,domain,Work,76.6
+Finland,subdomain,Participation in work,94.4
+Finland,subdomain,Segregation and quality of work,62.1
+Finland,domain,Money,81.1
+Finland,subdomain,Financial resources,81.4
+Finland,subdomain,Economic situation,80.8
+Finland,domain,Knowledge,49.8
+Finland,subdomain,Attainment and participation,75.3
+Finland,subdomain,Segregation,33
+Finland,domain,Time,59.1
+Finland,subdomain,Care activities,64.3
+Finland,subdomain,Social activities,54.4
+Finland,domain,Power,61
+Finland,subdomain,Political power,78.4
+Finland,subdomain,Economic power,59
+Finland,subdomain,Social power,49.1
+Finland,domain,Health,87.3
+Finland,subdomain,Health status,93.8
+Finland,subdomain,Healthy behaviour,81.3
+Sweden,overall,Overall Gender Equality Index,73.7
+Sweden,domain,Work,80.4
+Sweden,subdomain,Participation in work,91.5
+Sweden,subdomain,Segregation and quality of work,70.7
+Sweden,domain,Money,81
+Sweden,subdomain,Financial resources,81.2
+Sweden,subdomain,Economic situation,80.7
+Sweden,domain,Knowledge,54.6
+Sweden,subdomain,Attainment and participation,70.5
+Sweden,subdomain,Segregation,42.3
+Sweden,domain,Time,58.7
+Sweden,subdomain,Care activities,56.7
+Sweden,subdomain,Social activities,60.6
+Sweden,domain,Power,80.3
+Sweden,subdomain,Political power,88.3
+Sweden,subdomain,Economic power,60.2
+Sweden,subdomain,Social power,97.6
+Sweden,domain,Health,91.2
+Sweden,subdomain,Health status,94.4
+Sweden,subdomain,Healthy behaviour,88
